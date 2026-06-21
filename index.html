@@ -129,6 +129,15 @@
   <canvas id="gameCanvas"></canvas>
   <div id="ui">TAP / SPACE to flap</div>
 
+  <div id="play-store-banner" style="display:none; margin-top:10px; padding:8px 14px; background:linear-gradient(90deg,#e94560,#7a1a30); color:#fff; border-radius:6px; font-size:11px; letter-spacing:2px; text-transform:uppercase; box-shadow:0 0 12px rgba(233,69,96,0.4); text-align:center;">
+    📱 Coming Soon to Google Play Store
+  </div>
+  <script>
+    if (!window.Capacitor) {
+      document.getElementById('play-store-banner').style.display = 'block';
+    }
+  </script>
+
   <script type="module">
     // ── Firebase ───────────────────────────────────────────
     const FB_CFG = {
